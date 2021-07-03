@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { products } from '../products';
+import { Product, products } from '../products';
 
 @Component({
   selector: 'app-product-list',
@@ -9,7 +9,7 @@ import { products } from '../products';
 })
 export class ProductListComponent implements OnInit {
 
-  products;
+  products:Product[];
 
   constructor() {
     this.products = products;
